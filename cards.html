@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        .btn, btn-primary{
+            width:100%;
+        }
+
+        h4, h5,p{
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        p{
+            font-weight: 500;
+        }
+
+        .card-img{
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .d-block{
+            height: 700px;
+        }
+
+        h1{
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/01/14/12/30/baseball-8507868_1280.jpg" alt="foto de bola de baseball na grama">
+                <div class="carousel-caption">
+                    <h2>Foto de bola de baseball</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/04/30/04/36/chess-8729265_1280.png" alt="Foto de peças de xadrez caindo">
+                <div class="carousel-caption">
+                    <h2>Foto de peças de xadrez caindo</h2>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2024/03/30/04/56/tea-8664063_1280.jpg" alt="Foto de chá">
+                <div class="carousel-caption">
+                    <h2>Foto de chá e ervas</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-prev">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+
+    <h1>Bootstrap - Cards</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark">
+                    <img class="card-img" src="./imagens/mulher.jpg" alt="">
+                    <div class="card-img-body">
+                        <h4 class="card-title">Carta de menina mágica</h4>
+                        <h5 class="card-subtitle">Campo de cogumelos</h5>
+                        <p>A pequena menina vaga atras de aventura, para explorar, em busca de aventura e do desconhecido</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark">
+                    <img class="card-img" src="./imagens/esquilo.webp" alt="">
+                    <div class="card-img-body">
+                        <h4 class="card-title">Carta de esquilo na arvore</h4>
+                        <h5 class="card-subtitle">Floresta tropical</h5>
+                        <p>Um tipico esquilo em um galho na arvore olhando para a camera</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card text-bg-dark">
+                    <img class="card-img" src="./imagens/tigre.webp" alt="">
+                    <div class="card-img-body">
+                        <h4 class="card-title">Carta de Tigre lendário</h4>
+                        <h5 class="card-subtitle">Sob a lua cheia</h5>
+                        <p>Um tigre de pelo malhado olhando a frente sob o luar de uma lua cheia</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
